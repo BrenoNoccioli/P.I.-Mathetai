@@ -1,0 +1,143 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand m-0" href="#" routerLink="/inicio">
+      <img class="my-1" src="../../assets/img/logo-mathethai.png" alt="Logo Mathetai" />
+    </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#conteudoNavbarSuportado"
+    aria-controls="conteudoNavbarSuportado"
+    aria-expanded="false"
+    aria-label="Alterna navegação"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown pr-3 pl-3">
+        <a
+          class="nav-link dropdown-toggle fs-20 text-white"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Exatas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 1]"
+            >Matemática</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 2]"
+            >Física</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 3]"
+            >Química</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown pr-3">
+        <a
+          class="nav-link dropdown-toggle fs-20 text-white"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Humanas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 4]"
+            >Português</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 5]"
+            >Sociologia</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 6]"
+            >História</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 7]"
+            >Geografia</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 8]"
+            >Inglês</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 9]"
+            >Filosofia</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 10]"
+            >Literatura</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 11]"
+            >Redação</a
+          >
+        </div>
+      </li>
+      <li class="nav-item active pr-3">
+        <a class="nav-link fs-20" href="#" [routerLink]="['/tema', 12]"
+          >Biológicas <span class="sr-only">(página atual)</span></a
+        >
+      </li>
+
+      <li class="nav-item dropdown pr-3">
+        <a
+          class="nav-link dropdown-toggle fs-20 text-white"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="fas fa-plus"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 13]"
+            >Direito</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 14]"
+            >Finanças</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 15]"
+            >Política</a
+          >
+          <a class="dropdown-item" href="#" [routerLink]="['/tema', 16]"
+            >Programação</a
+          >
+        </div>
+      </li>
+    </ul>
+
+    <li class="nav-item dropdown d-flex align-items-center">
+      <a
+        class="nav-link dropdown-toggle fs-20 text-white"
+        href="#"
+        id="navbarDropdown"
+        role="button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <img
+          src="{{ foto }}"
+          alt="Foto perfil"
+          class="img-fluid rounded-circle fotoPerfil"
+          onerror="this.onerror=null; this.src='../../assets/img/padrao-perfil.jpg'"
+        />
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" [routerLink]="['/user-edit', id]"
+          >Editar perfil</a
+        >
+        <a (click)="sair()" class="dropdown-item" href="#">Sair</a>
+      </div>
+    </li>
+  </div>
+</nav>

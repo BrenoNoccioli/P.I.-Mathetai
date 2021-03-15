@@ -1,0 +1,57 @@
+.back-top{
+  font-size: 35px;
+  animation: back-to-top 1s infinite alternate;
+}
+
+footer {
+  background-color: #0f6d62;
+}
+
+ul.social-network {
+  list-style: none;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0;
+  padding: 5px;
+}
+
+.imgQuemSomos {
+  width: 45px;
+  height: 45px;
+}
+
+.fab {
+  font-size: 35pt;
+  color: white;
+  padding: 10px;
+}
+
+.fa-facebook-square:hover {
+  color: #3bbba0;
+}
+
+.fa-instagram-square:hover {
+  color: #3bbba0;
+}
+
+.fa-linkedin:hover {
+  color: #3bbba0;
+}
+
+.fa-github-square:hover {
+  color: #3bbba0;
+}
+
+/*Animações*/
+@keyframes back-to-top{
+  0%{
+    transform: translateY(20px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,127 @@
+a{
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 0.8rem;
+  border: 1px solid #b6b6b6;
+}
+
+.buscaLogo {
+  width: 50px;
+  height: 50px;
+}
+
+.postInicio {
+  background-color: #d0f0e9;
+  border: 1px solid #267866;
+  border-radius: 0.8rem;
+  padding: 8px;
+}
+
+.postInicio .imgPost {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  background-clip: content-box;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.fas {
+  font-size: 1rem;
+}
+
+.fa-thumbs-up:hover {
+  color: #7ea4b3;
+}
+
+.fa-comment:hover {
+  color: #7ea4b3;
+}
+
+.fa-share-alt:hover {
+  color: #7ea4b3;
+}
+
+.fa-photo-video {
+  color: #77dd77;
+}
+
+.fa-user-tag {
+  color: #7ea4b3;
+}
+
+.fa-laugh {
+  color: #f16e65;
+}
+
+.postInicio .postOpcoes a {
+  text-decoration: none;
+  color: #494949;
+}
+
+.teste{
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.teste::after{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  width: 98%;
+  height: 1px;
+  background-color: rgb(148, 148, 148);
+}
+
+.btn-verdepetroleo {
+  font-weight: bold;
+  color: white;
+  background-color: #0f6d62;
+}
+
+.btn-vermelhoclaro {
+  font-weight: bold;
+  color: white;
+  background-color: #f44235;
+}
+
+.fa-th {
+  color: #0f6d62;
+  font-size: 24px;
+}
+
+.fa-trash {
+  color: #f44235;
+}
+
+.img-post {
+  width: 35px;
+  height: 35px;
+}
+
+@media (min-width: 1px) {
+  .top-conteudo {
+    display: none;
+  }
+
+  .teste{
+    margin-bottom: 30px;
+  }
+
+  .teste::after{
+    width:95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-conteudo {
+    display: block;
+  }
+
+  .teste::after{
+    width: 98%;
+  }
+}

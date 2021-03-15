@@ -1,0 +1,64 @@
+.btn-vermelhoclaro {
+  background-color: #f44235;
+}
+
+.btn-verdepetroleo {
+  font-weight: 600;
+  background-color: #0f6d62;
+}
+
+.btn-verdeclaro {
+  font-weight: 600;
+  background-color: #3bbba0;
+}
+
+.tmn {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.plan-color {
+  color: #0f6d62;
+}
+
+.tmn-logo {
+  width: 130px;
+  align-items: center;
+}
+
+.imgFlip {
+  rotate: 60deg;
+}
+
+.miss{
+  color:#f44235;
+  font-style: italic;
+}
+
+#cad{
+  font-weight: bold;
+  color: #3bbba0;
+  text-decoration: underline;
+}
+
+.card{
+background-color: #f1f1f1;
+border: none
+}
+
+.card-img-top{
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+@media (min-width: 360px) {
+  i {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  i {
+    font-size: 35px;
+  }
+}
